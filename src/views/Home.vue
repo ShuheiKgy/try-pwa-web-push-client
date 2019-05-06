@@ -13,6 +13,11 @@ export default {
   name: "home",
   components: {
     HelloWorld
+  },
+
+  async mounted() {
+    const response = await this.$_axios.get("/");
+    console.log(response);
   }
 };
 </script>

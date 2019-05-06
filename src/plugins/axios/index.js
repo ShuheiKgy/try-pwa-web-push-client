@@ -1,5 +1,4 @@
 import axios from "axios";
-import { get } from "https";
 
 const install = (Vue, config = {}) => {
   const client = axios.create(config);
